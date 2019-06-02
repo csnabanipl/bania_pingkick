@@ -24,7 +24,7 @@ AddEventHandler('checkPing', function()
 	if (SteamIdInList(id)) then
 	    TriggerClientEvent('chatMessage', source, 'PING KICKER ', { 255, 0, 0 }, 'Your Ping is too high!')
 	else
-	    DropPlayer(source, 'Ping is too high (Limit: ' .. MaxPing .. ' Your Ping: ' .. ping .. ')')
+	    DropPlayer(source, 'Your Ping is too high (Ping Limit: ' .. MaxPing .. ' Your Ping: ' .. ping .. ')')
 	end	
     end
 end)
