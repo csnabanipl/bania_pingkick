@@ -6,11 +6,11 @@ local ImmunitetIds = { -- DONT KICK ADMINS PLS!!!
 local pingLimit = 120 -- Ping Limit / configurable
 
 function SteamIdInList(id)
-    for k, v in pairs(ImmunitetIds) do 
-	if (id == v) then 
-	   return true 
-	end 
-    end
+   for k, v in pairs(ImmunitetIds) do 
+      if (id == v) then 
+	  return true 
+      end 
+   end
 
    return false 
 end
