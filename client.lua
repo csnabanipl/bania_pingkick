@@ -1,17 +1,16 @@
 local firstspawn = false
-local checkRate = 5000 -- Check Every 5 sec
 
 AddEventHandler('playerSpawned', function(spawn)
-	Citizen.Wait(10000)
-	firstspawn = true
+    Citizen.Wait(10000)
+    firstspawn = true
 end)
 
 Citizen.CreateThread(function()
-	while true do
-		Wait(checkRate)
+    while true do
+	Citizen.Wait(5000)
 
-		if firstspawn then
-			TriggerServerEvent("checkPing")
-		end
+        if firstspawn then
+	   TriggerServerEvent("checkPing")
 	end
+    end
 end)
