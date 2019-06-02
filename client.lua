@@ -7,10 +7,10 @@ end)
 
 Citizen.CreateThread(function()
     while true do
-	Citizen.Wait(5000)
+        Citizen.Wait(5000)
 
         if firstspawn then
-	   TriggerServerEvent('checkPing')
-	end
+            TriggerServerEvent('checkPing')
+        end
     end
 end)
