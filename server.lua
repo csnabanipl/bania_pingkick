@@ -18,7 +18,7 @@ end
 RegisterServerEvent('checkPing')
 AddEventHandler('checkPing', function()
     local id = GetPlayerIdentifiers(source)[1]
-    ping = GetPlayerPing(source)
+    local ping = GetPlayerPing(source)
 
     if ping >= MaxPing then
 	if (SteamIdInList(id)) then
